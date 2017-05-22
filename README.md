@@ -2,6 +2,11 @@
 
 hello-index is an auto-generated (and customizable) index file to require all files in a directory.
 
+[![Build Status](https://img.shields.io/travis/hello-js/hello-index/master.svg)](https://travis-ci.org/hello-js/hello-index)
+[![Coverage Status](https://img.shields.io/coveralls/hello-js/hello-index.svg)](https://coveralls.io/github/hello-js/hello-index)
+[![Dependency Status](https://img.shields.io/david/hello-js/hello-index.svg)](https://david-dm.org/hello-js/hello-index)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 ## Installation
 
 ```
