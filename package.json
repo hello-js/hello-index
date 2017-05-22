@@ -7,11 +7,17 @@
   "author": "Matt Venables <mattvenables@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha test/**/*.spec.js"
+    "test": "standard && NODE_ENV=test nyc mocha test/**/*.spec.js"
   },
   "standard": {
     "env": [
       "mocha"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
     ]
   },
   "dependencies": {
@@ -21,6 +27,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.4.1",
-    "nyc": "^10.3.2"
+    "nyc": "^10.3.2",
+    "standard": "^10.0.2"
   }
 }

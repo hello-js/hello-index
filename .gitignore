@@ -7,3 +7,7 @@ tmp
 # Logs
 *.log
 logs/
+
+# Coverage
+.nyc_output
+coverage

@@ -41,4 +41,12 @@ describe('hello-index', function () {
       'controllerTwo'
     ])
   })
+
+  it('ignores files if they match after case-shifting', function () {
+    let files = index(root, { ignore: 'controllerTwo' })
+
+    expect(Object.keys(files)).to.eql([
+      'controllerOne'
+    ])
+  })
 })
