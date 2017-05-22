@@ -14,6 +14,9 @@ describe('hello-index', function () {
       'controllerOne',
       'controllerTwo'
     ])
+
+    expect(files.controllerOne).to.eql('one')
+    expect(files.controllerTwo).to.eql('two')
   })
 
   it('allows for exact filenames', function () {
@@ -23,6 +26,9 @@ describe('hello-index', function () {
       'controller-one',
       'controller-two'
     ])
+
+    expect(files['controller-one']).to.eql('one')
+    expect(files['controller-two']).to.eql('two')
   })
 
   it('allows for ClassName case filenames', function () {
@@ -32,6 +38,9 @@ describe('hello-index', function () {
       'ControllerOne',
       'ControllerTwo'
     ])
+
+    expect(files.ControllerOne).to.eql('one')
+    expect(files.ControllerTwo).to.eql('two')
   })
 
   it('allows ignoring specific files', function () {
@@ -40,6 +49,8 @@ describe('hello-index', function () {
     expect(Object.keys(files)).to.eql([
       'controllerTwo'
     ])
+
+    expect(files.controllerTwo).to.eql('two')
   })
 
   it('ignores files if they match after case-shifting', function () {
@@ -48,5 +59,7 @@ describe('hello-index', function () {
     expect(Object.keys(files)).to.eql([
       'controllerOne'
     ])
+
+    expect(files.controllerOne).to.eql('one')
   })
 })
