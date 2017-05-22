@@ -18,9 +18,9 @@ yarn add hello-index
 ```js
 'use strict'
 
-const index = require('hello-index');
+const index = require('hello-index')
 
-module.exports = index(__dirname);
+module.exports = index(__dirname)
 ```
 
 By default, all files and directories in `__dirname` will be added to the export list, matching case exactly.
