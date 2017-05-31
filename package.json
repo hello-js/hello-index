@@ -27,9 +27,9 @@
     "lodash.upperfirst": "^4.3.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.0",
     "coveralls": "^2.13.1",
-    "mocha": "^3.4.1",
+    "mocha": "^3.4.2",
     "nyc": "^10.3.2",
     "standard": "^10.0.2"
   }
